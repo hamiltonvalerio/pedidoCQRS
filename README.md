@@ -38,7 +38,8 @@
 ##  Overview
 
 <code>API simples para entendimento do CQRS com Spring Boot. 
-Command Query Responsibility Segregation (CQRS) é um padrão de arquitetura que separa as operações de leitura (queries) e escrita (commands) de um sistema, para melhorar a escalabilidade, segurança e manutenção. Esse padrão é especialmente útil em sistemas complexos e de alta performance, onde as operações de leitura e escrita têm requisitos diferentes. 
+Command Query Responsibility Segregation (CQRS) é um padrão de arquitetura que separa as operações de leitura (queries) e escrita (commands) de um sistema, para melhorar a escalabilidade, segurança e manutenção. Esse padrão é especialmente útil em sistemas complexos e de alta performance, onde as operações de leitura e escrita têm requisitos diferentes.
+No caso deste exemplo está criado apenas em uma api, mas em relação a escalabilidade e manutenção, por exemplo,  separaríamos em dois microsserviços, um para commands e outro para queries.
 
 ESTRUTURA:
 ► Commands são responsáveis por alterar o estado do sistema, como criar, atualizar ou deletar um pedido.
